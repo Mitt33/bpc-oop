@@ -1,0 +1,12 @@
+# bpc-oop exercises
+- 02: complex calculator with tests
+- 03: matrix console calculator
+- 04: console string statistics
+- 05: oop exercise Cars
+- 06: oop exercise graphical objects
+- 07: oop exercise graphical objects
+- 08: oop exercise temperatures
+- 09: WPF app calculator (state machine)
+- 10: simple SQL database
+- 11: continuation of sql - view, methods
+- 12: Web API calculator - simple web calc and WPF calc base on that API
