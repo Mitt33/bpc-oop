@@ -1,0 +1,7 @@
+C:\Users\Student\source\repos\cv06\bin\Debug\cv06.exe.config
+C:\Users\Student\source\repos\cv06\bin\Debug\cv06.exe
+C:\Users\Student\source\repos\cv06\bin\Debug\cv06.pdb
+C:\Users\Student\source\repos\cv06\obj\Debug\cv06.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\cv06\obj\Debug\cv06.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\cv06\obj\Debug\cv06.exe
+C:\Users\Student\source\repos\cv06\obj\Debug\cv06.pdb

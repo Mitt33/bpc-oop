@@ -1,0 +1,8 @@
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\bin\Debug\cv02.exe.config
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\bin\Debug\cv02.exe
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\bin\Debug\cv02.pdb
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\obj\Debug\oop-cv02.csproj.AssemblyReference.cache
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\obj\Debug\oop-cv02.csproj.SuggestedBindingRedirects.cache
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\obj\Debug\oop-cv02.csproj.CoreCompileInputs.cache
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\obj\Debug\cv02.exe
+C:\Users\martin\Desktop\škola\OOP\cviceni\cv02\cv02\cv02\obj\Debug\cv02.pdb

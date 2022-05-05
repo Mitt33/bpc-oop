@@ -1,0 +1,15 @@
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\cv09\obj\Debug\MainWindow.g.cs
+C:\Users\Student\source\repos\cv09\obj\Debug\App.g.cs
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09_MarkupCompile.cache
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09_MarkupCompile.lref
+C:\Users\Student\source\repos\cv09\bin\Debug\cv09.exe.config
+C:\Users\Student\source\repos\cv09\bin\Debug\cv09.exe
+C:\Users\Student\source\repos\cv09\bin\Debug\cv09.pdb
+C:\Users\Student\source\repos\cv09\obj\Debug\MainWindow.baml
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.g.resources
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.Properties.Resources.resources
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.csproj.GenerateResource.cache
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.exe
+C:\Users\Student\source\repos\cv09\obj\Debug\cv09.pdb

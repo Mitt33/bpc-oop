@@ -1,0 +1,7 @@
+C:\Users\Student\source\repos\cv04\bin\Debug\cv04.exe.config
+C:\Users\Student\source\repos\cv04\bin\Debug\cv04.exe
+C:\Users\Student\source\repos\cv04\bin\Debug\cv04.pdb
+C:\Users\Student\source\repos\cv04\obj\Debug\cv04.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\cv04\obj\Debug\cv04.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\cv04\obj\Debug\cv04.exe
+C:\Users\Student\source\repos\cv04\obj\Debug\cv04.pdb

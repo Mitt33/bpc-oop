@@ -1,0 +1,57 @@
+CREATE TABLE [Students]
+(
+	[StudentID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [Name] VARCHAR(30) NOT NULL, 
+    [Surname] VARCHAR(40) NOT NULL, 
+    [BirthDate] DATETIME NOT NULL
+)
+CREATE TABLE [Subjects]
+(
+	[SubjectID] INT IDENTITY (1,1) NOT NULL PRIMARY KEY, 
+    [Shortcut] VARCHAR(10) NOT NULL, 
+    [FullName] VARCHAR(60) NOT NULL
+)
+
+CREATE TABLE [Student_Has_Subject]
+(
+	[StudentID] INT NOT NULL , 
+    [SubjectID] INT NOT NULL, 
+    [Mark] INT NULL, 
+    [MarkDate] DATETIME NULL, 
+    CONSTRAINT [StudentID] FOREIGN KEY (StudentID) REFERENCES [Students](StudentID), 
+    CONSTRAINT [SubjectID] FOREIGN KEY (SubjectID) REFERENCES [Subjects](SubjectID),
+	PRIMARY KEY (StudentID, SubjectID)
+)
+
+INSERT INTO Students VALUES ('Marek', 'Simutko', '2001-02-25')
+INSERT INTO Students VALUES ('Borek', 'Stavitel', '1920-05-28')
+INSERT INTO Students VALUES ('Borivoj', 'Kozel', '2021-04-21')
+INSERT INTO Students VALUES ('Franta', 'Vobecny', '2005-12-15')
+INSERT INTO Students VALUES ('Thanos', 'Thanosovic', '2003-06-11')
+
+INSERT INTO Subjects VALUES ('OOP', 'Kurz vareni')
+INSERT INTO Subjects VALUES ('TIN', 'Kurz vysivani pro pokrocile')
+INSERT INTO Subjects VALUES ('PST', 'Telesna vychova')
+INSERT INTO Subjects VALUES ('SOS', 'Zaklady totalitnich rezimu')
+INSERT INTO Subjects VALUES ('OLE', 'Pokrocila mala nasobilka')
+
+INSERT INTO Student_Has_Subject VALUES ('1', '1', '2', '2003-06-11')
+INSERT INTO Student_Has_Subject VALUES ('2', '2', '4', '2021-06-11')
+INSERT INTO Student_Has_Subject VALUES ('3', '3', '5', '2021-06-11')
+INSERT INTO Student_Has_Subject VALUES ('4', '4', '4', '2020-06-11')
+INSERT INTO Student_Has_Subject VALUES ('5', '5', '1', '2020-06-11')
+INSERT INTO Student_Has_Subject VALUES ('2', '1', '3', '2021-06-11')
+INSERT INTO Student_Has_Subject VALUES ('3', '1', '3', '2021-06-11')
+INSERT INTO Student_Has_Subject VALUES ('4', '1', '3', '2021-06-11')
+
+--Dotaz, kde vypíšete všechny studenty a předměty které mají zapsané. Použijte LEFT JOIN.
+SELECT Name, Surname, Shortcut, FullName FROM Students st LEFT JOIN Student_Has_Subject shs ON st.StudentID = shs.StudentID LEFT JOIN Subjects su ON shs.SubjectID = su.SubjectID
+
+--Dotaz, kde vypíšete příjmení studentů a počet studentů, kteří mají stejné příjmení. Seřaďte je sestupně dle četnosti příjmení. Použijte GROUP BY.
+SELECT Surname, count(Surname) as SurnameCount FROM Students GROUP BY Surname
+
+--Dotaz, kde vypíšete předměty, ve kterých je zapsáno méně než 3 studenti.
+SELECT FullName, count(Student_Has_Subject.SubjectID) as SubjectCount from Student_Has_Subject shs LEFT JOIN Subjects su ON shs.SubjectID = su.SubjectID GROUP BY Fullanme HAVING COUNT(Student_Has_Subject.SubjectID) < 3
+
+--Dotaz, kde vypíšete všechny předměty a nejlepší, nejhorší a průměrné hodnocení v předmětu. Dále pak počet hodnocených studentů v předmětu. Použijte GROUP BY.
+SELECT FullName as [Subject name], MIN(NULLIF(Mark, 0)) as [best mark], MAX(Mark0 as [worst mark], AVG(NULLIF(Mark, 0)) as [average mark] FROM Student_Has_Subject shs LEFT JOIN Subjects su on shs.SubjectID = su.SubjectID GROUP BY
